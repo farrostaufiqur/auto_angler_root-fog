@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/screen_bg">
+
+    <!-- Left column: info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AutoAngler (Rooted)"
+            android:textSize="24sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Waiting for permission..."
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_root_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Root: checking…"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/status_trial"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_license_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode: Trial"
+            android:textSize="13sp"
+            android:textColor="@color/status_trial"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_trial_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trial mode: the bot stops automatically after 3 minutes of fishing.\nEnter a registration code to unlock full mode."
+            android:textSize="12sp"
+            android:textColor="@color/text_tertiary"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_reg_code"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Registration code (10 digits)"
+            android:textColorHint="@color/text_hint"
+            android:textColor="@color/text_primary"
+            android:inputType="number"
+            android:maxLength="10"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="@color/btn_register"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Always visible, not gated by license state -->
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:backgroundTint="@color/btn_about" />
+
+    </LinearLayout>
+
+    <!-- Right column: actions -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="16dp">
+
+        <Button
+            android:id="@+id/btn_grant_overlay"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="1. Grant Overlay Permission"
+            android:backgroundTint="@color/btn_grant"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_start_service"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="2. Start Overlay Service"
+            android:backgroundTint="@color/btn_start"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_stop_service"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Stop Service"
+            android:backgroundTint="@color/btn_stop_service"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_view_log"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="View Log"
+            android:backgroundTint="@color/btn_log"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Once the service is running, the HUD appears over the game.\nThis build is Root only — make sure your device is rooted."
+            android:textSize="12sp"
+            android:textColor="@color/text_tertiary"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

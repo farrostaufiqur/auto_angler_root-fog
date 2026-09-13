@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Varian MODE GELAP dari token adaptif di res/values/colors.xml.
+         Hanya surface + teks + status yang di-override; warna aksen tombol
+         dipakai apa adanya dari values/colors.xml. -->
+
+    <color name="screen_bg">#FF121212</color>
+    <color name="screen_bg_alt">#FF101014</color>
+
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFBBBBBB</color>
+    <color name="text_tertiary">#FF888888</color>
+    <color name="text_hint">#FF777777</color>
+
+    <color name="log_text">#FFD0FFD0</color>
+
+    <color name="status_full">#FF00E676</color>
+    <color name="status_trial">#FFFFB300</color>
+
+</resources>

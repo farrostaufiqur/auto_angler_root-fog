@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoAngler (Rooted)</string>
+    <string name="notif_channel_name">AutoAngler Rooted Service</string>
+    <string name="notif_title">AutoAngler Rooted Active</string>
+    <string name="notif_text">Overlay running. Tap to manage.</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema aplikasi: mengikuti mode cerah / gelap sistem (DayNight).
+         Warna surface & teks memakai token @color/* yang punya varian di
+         res/values-night/. Tidak mengubah logika apa pun — hanya tampilan. -->
+    <style name="Theme.AutoAngler" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="colorPrimary">@color/btn_grant</item>
+        <item name="colorPrimaryDark">@color/btn_grant</item>
+        <item name="colorAccent">@color/btn_grant</item>
+    </style>
+
+</resources>
