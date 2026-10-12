@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ============================================================
 #  AutoAngler (Rooted) — Build RILIS (Linux)
-#  Menghasilkan & menyalin ke ANDROID/apk/ (aturan nama sama dgn APK):
+#  Menghasilkan & menyalin ke apk/ (aturan nama sama dgn APK):
 #    - autoangler-rooted_<yyyymmdd>.aab   (WAJIB — untuk upload Play Store)
 #    - autoangler-rooted_<yyyymmdd>.apk   (untuk sideload / uji)
 #  Sumber: app/build/outputs/bundle/release/app-release.aab
@@ -16,7 +16,7 @@ export JAVA_HOME="${JAVA_HOME:-$HOME/Android/jdk-17}"
 export ANDROID_SDK_ROOT="${ANDROID_SDK_ROOT:-$HOME/Android/Sdk}"
 export PATH="$JAVA_HOME/bin:$PATH"
 
-# Nama dasar artefak di ANDROID/apk/ (tanpa ekstensi). Varian ROOT-ONLY.
+# Nama dasar artefak di apk/ (tanpa ekstensi). Varian ROOT-ONLY.
 ARTIFACT_BASE="${ARTIFACT_BASE:-autoangler-rooted}"
 
 if [ ! -f keystore.properties ]; then
@@ -34,7 +34,7 @@ echo "[1/2] bundleRelease (AAB) + assembleRelease (APK)..."
 
 AAB_SRC="app/build/outputs/bundle/release/app-release.aab"
 APK_SRC="app/build/outputs/apk/release/app-release.apk"
-DST_DIR="../apk"
+DST_DIR="apk"
 STAMP="$(date +%Y%m%d)"
 AAB_DST="$DST_DIR/${ARTIFACT_BASE}_${STAMP}.aab"
 APK_DST="$DST_DIR/${ARTIFACT_BASE}_${STAMP}.apk"

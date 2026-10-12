@@ -249,7 +249,7 @@ Setelah Claude app menganalisis dan memberikan saran perubahan kode:
 2. Paste saran perubahan dengan instruksi: "terapkan perubahan ini: [saran Claude app]"
 3. Claude CLI akan edit file yang tepat
 4. Build:
-   - Dev/uji cepat: `./build_and_copy.sh` → APK debug ke `ANDROID/apk/`
+   - Dev/uji cepat: `./build_and_copy.sh` → APK debug ke `apk/`
    - Rilis (ter-sign, untuk Play Store): `./build_release.sh` → AAB + APK rilis
      (butuh `keystore.properties` + `autoangler-release.keystore` di root proyek).
    Kedua skrip sudah men-default `JAVA_HOME=~/Android/jdk-17` &

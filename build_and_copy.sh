@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ============================================================
 #  AutoAngler (Rooted) — Build & Copy debug (Linux)
-#  Build APK debug lalu salin ke ANDROID/apk/ sebagai
+#  Build APK debug lalu salin ke apk/ sebagai
 #  autoangler-rooted-debug_<yyyymmdd>.apk (nama beda dari artefak
 #  rilis autoangler-rooted_ dan dari varian biasa autoangler_).
 # ============================================================
@@ -24,7 +24,7 @@ echo "[1/2] Build APK debug..."
 ./gradlew assembleDebug
 
 SRC="app/build/outputs/apk/debug/app-debug.apk"
-DST_DIR="../apk"
+DST_DIR="apk"
 DST="$DST_DIR/${ARTIFACT_BASE}_$(date +%Y%m%d).apk"
 
 [ -f "$SRC" ] || { echo "BUILD GAGAL / APK tidak ditemukan: $SRC" >&2; exit 1; }

@@ -20,7 +20,7 @@ tuning: `CONTEXT_FOR_CLAUDE.md`. Rilis & Play Store: `PLAY_STORE.md`.
 
 ## Build
 
-Aturan rilis global (AAB wajib, salin APK+AAB ke `ANDROID/apk/` dgn nama sama, build
+Aturan rilis global (AAB wajib, salin APK+AAB ke `apk/` dgn nama sama, build
 ulang tiap perubahan) di `/home/albayan/CLAUDE.md` bagian ANDROID/.
 
 - Rilis: `./build_release.sh` (`ARTIFACT_BASE=autoangler-rooted` sudah default).

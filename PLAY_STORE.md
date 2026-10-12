@@ -10,7 +10,7 @@
 | Signing | keystore RSA-4096, alias `autoangler`, valid ~27 th (`autoangler-release.keystore`) |
 | R8 / shrink resources | aktif (`isMinifyEnabled` + `isShrinkResources = true`) |
 | Output AAB | `app/build/outputs/bundle/release/app-release.aab` (~2,2 MB) — **ini yang di-upload** |
-| Output APK | `app/build/outputs/apk/release/app-release.apk` (~1,5 MB) — sideload/uji, disalin ke `ANDROID/apk/autoangler-rooted_<tgl>.apk` |
+| Output APK | `app/build/outputs/apk/release/app-release.apk` (~1,5 MB) — sideload/uji, disalin ke `apk/autoangler-rooted_<tgl>.apk` |
 
 Build ulang: `./build_release.sh`
 
